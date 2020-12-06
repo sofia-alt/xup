@@ -1,0 +1,18 @@
+.site-list {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.site-list__link {
+  color: $basic-dark;
+  font-weight: bold;
+}
+
+.site-list__link_allotted {
+  color: $basic-blue;
+}
+
+.site-list__item {
+  padding: 24px 40px 24px 0;
+}

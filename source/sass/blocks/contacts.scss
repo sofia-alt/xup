@@ -1,0 +1,30 @@
+.contacts {
+  padding-top: 214px;
+  color: $basic-dark;
+}
+
+.contacts__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.contacts__text {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 64px;
+}

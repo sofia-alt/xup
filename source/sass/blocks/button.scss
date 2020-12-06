@@ -1,0 +1,14 @@
+.button {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button_brif {
+  border: 1.5px solid $basic-blue;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: $basic-blue;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: auto;
+}

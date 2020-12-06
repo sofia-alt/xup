@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XUP</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <nav class="main-nav container">
+      <a class="main-nav__logo" href="#">
+        <img src="img/logo.svg" width="75" height="24" alt="Логотип XUP">
+      </a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            Портфолио
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link_allotted" href="#">
+            Исследования
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            Проектирование
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            UI дизайн
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            Юзабилити
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
+      <a class="button button_brif" href="#">
+        Заполнить бриф
+      </a>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="contacts container">
+      <h1 class="contacts__title">Контакты</h1>
+      <p class="contacts__text">Мы рады ответить на ваши вопросы!</p>
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item__email">
+          <a class="contacts__link" href="mailto:hello@xup.studio">hello@xup.studio</a>
+          <span class="contacts__name">Электронная почта</span>
+        </li>
+        <li class="contacts__item contacts__item__tel">
+          <a class="contacts__link" href="tel:+79256828437">+7 925 682 84 37</a>
+          <span class="contacts__name">Телефон</span>
+        </li>
+        <li class="contacts__item contacts__item__city">
+          <p class="contacts__info">Москва</p>
+          <span class="contacts__name">Город</span>
+        </li>
+        <li class="contacts__item contacts__item__address">
+          <p class="contacts__info">Перовская 66 корпус 6</p>
+          <span class="contacts__name">Адрес</span>
+        </li>
+      </ul>
+    </section>
+    <section class="consultation">
+      <h1 class="consultation__title">Хотите оценить ваш проект?</h1>
+      <span class="consultation__text">Опишите его основные идеи и функции - получите нашу бесплатную консультацию.</span>
+      <form class="form">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label form__label_required" for="name">Имя</label>
+            <input class="form__input" type="text" name="your-name" id="name" placeholder="Введите" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label form__label_required" for="email">E-mail</label>
+            <input class="form__input" type="text" name="your-email" id="email" placeholder="Введите" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="tel">Телефон</label>
+            <input class="form__input" type="text" name="your-tel" id="tel" placeholder="Введите">
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="additionally">Описание</label>
+            <textarea class="form__textarea" name="your-additionally" id="additionally" placeholder="Введите"></textarea>
+          </li>
+        </ul>
+        <button class="button" type="submit">Оставить заявку</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="#" aria-label="Логотип XUP"></a>
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Behance</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Dreebl</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">VK</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="contacts-footer">
+      <li class="contacts-footer__item contacts-footer__item_email">
+        <a class="contacts-footer__link" href="mailto:hello@xup.studio">hello@xup.studio</a>
+      </li>
+      <li class="contacts-footer__item contacts-footer__item_tel">
+        <a class="contacts-footer" href="tel:+79256828437">+7 925 682 84 37</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
