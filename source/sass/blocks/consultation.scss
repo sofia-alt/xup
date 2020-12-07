@@ -1,10 +1,29 @@
 .consultation {
-  display: flex;
+  display: grid;
+  grid-template-columns: 330px 728px;
+  column-gap: 70px;
+  padding-bottom: 286px;
 }
 
 .consultation__title {
   font-weight: 800;
   font-size: 48px;
   line-height: 64px;
-  color: $basic-black;
+  color: $basic-dark;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.consultation__strong {
+  color: $basic-blue;
+  font-weight: 800;
+}
+
+.consultation__text-wrapper {
+  width: 330px;
+}
+
+.consultation__text {
+  font-size: 14px;
+  line-height: 24px;
 }
