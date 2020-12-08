@@ -6,15 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XUP</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="page-header">
     <nav class="main-nav container">
-      <a class="main-nav__logo" href="#">
-        <img src="img/logo.svg" width="75" height="24" alt="Логотип XUP">
+      <a class="main-nav__logo" href="#" aria-label="Логотип XUP">
+        <svg class="social__icon" width="75" height="24">
+          <use xlink:href="/img/sprite.svg#logo"></use>
+        </svg>
       </a>
+      <button class="main-nav__toggle main-nav__toggle_closed" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="#">
@@ -46,10 +54,12 @@
             Контакты
           </a>
         </li>
+        <li class="site-list__item">
+          <a class="site-list__link button button_brif" href="#">
+            Заполнить бриф
+          </a>
+        </li>
       </ul>
-      <a class="button button_brif" href="#">
-        Заполнить бриф
-      </a>
     </nav>
   </header>
   <main class="page-main">
@@ -57,19 +67,19 @@
       <h1 class="contacts__title">Контакты</h1>
       <p class="contacts__text">Мы рады ответить на ваши вопросы!</p>
       <ul class="contacts__list">
-        <li class="contacts__item contacts__item__email">
+        <li class="contacts__item contacts__item_email">
           <a class="contacts__link" href="mailto:hello@xup.studio">hello@xup.studio</a>
           <span class="contacts__name">Электронная почта</span>
         </li>
-        <li class="contacts__item contacts__item__tel">
+        <li class="contacts__item contacts__item_tel">
           <a class="contacts__link" href="tel:+79256828437">+7 925 682 84 37</a>
           <span class="contacts__name">Телефон</span>
         </li>
-        <li class="contacts__item contacts__item__city">
+        <li class="contacts__item contacts__item_city">
           <p class="contacts__info">Москва</p>
           <span class="contacts__name">Город</span>
         </li>
-        <li class="contacts__item contacts__item__address">
+        <li class="contacts__item contacts__item_address">
           <p class="contacts__info">Перовская 66 корпус 6</p>
           <span class="contacts__name">Адрес</span>
         </li>
@@ -92,7 +102,7 @@
           </li>
           <li class="form__item">
             <label class="form__label" for="tel">Телефон</label>
-            <input class="form__input" type="text" name="your-tel" id="tel" placeholder="Введите">
+            <input class="form__input" type="tel" name="your-tel" id="tel" placeholder="Введите">
           </li>
           <li class="form__item">
             <label class="form__label" for="additionally">Описание проекта</label>
@@ -104,49 +114,73 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo" href="#" aria-label="Логотип XUP"></a>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Behance</span>
-          </a>
+    <div class="page-footer__wrapper container">
+      <a class="page-footer__logo" href="#" aria-label="Логотип XUP">
+        <svg class="social__icon" width="126" height="40">
+          <use xlink:href="/img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="20" height="13">
+                <use xlink:href="/img/sprite.svg#icon-behance"></use>
+              </svg>
+              <span class="visually-hidden">Behance</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_attention" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="/img/sprite.svg#icon-dribbble"></use>
+              </svg>
+              <span class="visually-hidden">Dreebl</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="10" height="20">
+                <use xlink:href="/img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="20" height="20">
+                <use xlink:href="/img/sprite.svg#icon-instagram"></use>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="20" height="12">
+                <use xlink:href="/img/sprite.svg#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">VK</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="20" height="17">
+                <use xlink:href="/img/sprite.svg#icon-telegram"></use>
+              </svg>
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="contacts-footer">
+        <li class="contacts-footer__item contacts-footer__item_email">
+          <a class="contacts-footer__link" href="mailto:hello@xup.studio">hello@xup.studio</a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Dreebl</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">VK</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Telegram</span>
-          </a>
+        <li class="contacts-footer__item contacts-footer__item_tel">
+          <a class="contacts-footer__link" href="tel:+79256828437">+7 925 682 84 37</a>
         </li>
       </ul>
     </div>
-    <ul class="contacts-footer">
-      <li class="contacts-footer__item contacts-footer__item_email">
-        <a class="contacts-footer__link" href="mailto:hello@xup.studio">hello@xup.studio</a>
-      </li>
-      <li class="contacts-footer__item contacts-footer__item_tel">
-        <a class="contacts-footer" href="tel:+79256828437">+7 925 682 84 37</a>
-      </li>
-    </ul>
   </footer>
 </body>
 </html>

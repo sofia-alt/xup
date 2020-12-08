@@ -2,6 +2,18 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+
+  @media (max-width: $desktop-width) {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    padding-top: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .site-list__link {
@@ -15,4 +27,13 @@
 
 .site-list__item {
   padding: 24px 40px 24px 0;
+
+  &:last-child {
+    padding: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 16px;
+  }
 }

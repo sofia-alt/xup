@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -9,9 +13,51 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .main-nav__logo {
   display: inline-block;
   padding-right: 40px;
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    padding: 18px 0;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    margin-left: 296px;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/menu-bar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 132px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-nav__toggle_closed {
+  background-image: url("/img/close.svg");
 }

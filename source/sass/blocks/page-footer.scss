@@ -1,0 +1,36 @@
+.page-footer {
+  border-top: 1px solid $basic-light-blue;
+  padding: 53px 0;
+
+  @media (max-width: $desktop-width) {
+    padding: 37px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 39px 0;
+  }
+}
+
+.page-footer__logo {
+  display: inline-block;
+  padding-top: 10px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 4px;
+  }
+}
+
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: 230px 1fr 182px;
+
+  @media (max-width: $desktop-width) {
+    grid-template-columns: 198px 1fr 182px;
+    align-items: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

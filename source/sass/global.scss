@@ -7,4 +7,12 @@
 .container {
   width: 1128px;
   margin: 0 auto;
+
+  @media (max-width: $desktop-width) {
+    width: 656px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 328px;
+  }
 }

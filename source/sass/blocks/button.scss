@@ -11,6 +11,26 @@
   border-radius: 8px;
   margin-left: auto;
   display: block;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $basic-dark;
+    box-shadow: none;
+  }
+
+  &:disabled {
+    background-color: $basic-dark-grey;
+    box-shadow: none;
+  }
 }
 
 .button_brif {
@@ -20,4 +40,29 @@
   border-radius: 5px;
   color: $basic-blue;
   box-shadow: none;
+
+  @media (max-width: $desktop-width) {
+    background-color: $basic-blue;
+    color: $basic-white;
+    border: none;
+    padding: 18px 32px;
+    box-shadow: 0 22px 44px rgba($basic-blue, 0.18);
+    margin-top: 16px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    border-color: $basic-dark;
+    color: $basic-dark;
+    background-color: transparent;
+  }
+
+  &:disabled {
+    border-color: $basic-dark-grey;
+    color: $basic-dark-grey;
+    background-color: transparent;
+  }
 }
