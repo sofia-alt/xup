@@ -18,6 +18,10 @@
   @media (max-width: $desktop-width) {
     padding-top: 4px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 7px;
+  }
 }
 
 .page-footer__wrapper {
@@ -31,6 +35,6 @@
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 46px;
   }
 }

@@ -21,13 +21,20 @@
   }
 }
 
-.main-nav__logo {
+.main-nav__logo-link {
   display: inline-block;
   padding-right: 40px;
 
   @media (max-width: $desktop-width) {
     position: relative;
     padding: 18px 0;
+  }
+}
+
+.main-nav__logo-img {
+  @media (max-width: $desktop-width) {
+    width: 91px;
+    height: 29px;
   }
 }
 
