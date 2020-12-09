@@ -94,8 +94,7 @@ exports.images = images;
 
 const sprite = () => {
   return gulp.src([
-    "build/img/**/icon-*.svg",
-    "build/img/**/logo.svg"
+    "build/img/**/icon-*.svg"
   ])
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
